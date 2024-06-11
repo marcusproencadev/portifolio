@@ -33,7 +33,7 @@ nav {
     justify-content: space-around;
     padding: 40px 40px 10px 40px;
     border-bottom: 1px solid white;
-    background-image: linear-gradient(45deg, #360158, #191919);
+    background-image: linear-gradient(45deg, #25033d, #000000);
     /* background-color: white; */
 
 }
@@ -188,6 +188,13 @@ form .btn-enviar input {
     color: white;
     font-weight: 500;
     cursor: pointer;
+    transition: .2s;
+}
+
+form .btn-enviar input:hover {
+
+    box-shadow: 0 0 15px #5a06a8;
+    transform: scale(1.05);
 }
 
 input:focus {
