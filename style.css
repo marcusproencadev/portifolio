@@ -83,11 +83,12 @@ li:hover {
 .sobre p {
     font-size: 19px;
     color: white;
-    margin-top: 20px;
+    margin: 20px 0;
     max-width: 400px;
     text-align: left;
     font-weight: 300;
     padding-left: 5px;
+
 
 
 }
@@ -99,6 +100,7 @@ li:hover {
     justify-content: space-around;
     margin-top: 60px;
     padding: 10px;
+
 }
 
 .name_tittle {
@@ -116,24 +118,84 @@ li:hover {
 }
 
 span {
-    color: #9405b1;
+    color: #500794;
     font-weight: 500;
 }
 
 
 
 
+/* fomulario */
+section.formulario {
+    background-image: linear-gradient(45deg, #25033d, #000000);
+    padding: 80px 4%;
+    border-top: 1px solid #500794;
+    box-shadow: 0 0 20px #500794;
 
-/* @keyframes animacao {
-    0% {
-        margin-top: 60px;
-    }
+}
 
-    50% {
-        margin-top: 40px;
-    }
+.interface h2 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
 
-    100% {
-        margin-top: 60px;
-    }
-} */
+}
+
+form {
+    padding-top: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #360464;
+    border: 0;
+    outline: 0;
+    padding: 15px 10px;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+form input::placeholder {
+    color: white;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form textarea::placeholder {
+    color: white;
+}
+
+form .btn-enviar {
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: #360464;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+input:focus {
+    border: 1px solid #360464;
+    box-shadow: 0 0 10px #5a06a8;
+}
+
+form textarea:focus {
+    border: 1px solid #360464;
+    box-shadow: 0 0 10px #5a06a8;
+}
